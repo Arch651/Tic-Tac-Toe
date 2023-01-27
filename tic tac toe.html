@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac toe Game</title>
+</head>
+<body style="text-align: center;">
+    <script src="game_logic.js"></script>
+    <div style="font: 40px bold;">Tic Tac Toe</div>
+    <div id="no_of_player" style="font: 20px bold;">
+        Number of players: 
+        <input type="radio" name="Player Number" id="num_player_1" value="1" checked = true>
+        <label for="num_player_1">Singleplayer</label>
+        <input type="radio" name="Player Number" id="num_player_2" value="2" >
+        <label for="num_player_2">Multi-player</label>
+    </div>    
+    
+
+    <p id="game_board">
+        <input type="button" value=" "  id="top_left" style="width: 100px; height: 100px; background: black; color: white; margin: 7px; font: 32px bold ; border: red solid 4px;" onclick="game_ttt(this)" disabled = true>
+        <input type="button" value=" " id="top_center" style="width: 100px; height: 100px; background: black; color: white; margin: 7px; font: 32px bold ;border: red solid 4px;" onclick="game_ttt(this)" disabled = true>
+        <input type="button" value=" " id="top_right" style="width: 100px; height: 100px; background: black; color: white; margin: 7px; font: 32px bold ;border: red solid 4px;" onclick="game_ttt(this)" disabled = true>
+        
+        <br>
+
+        <input type="button" value=" " id="middle_left" style="width: 100px; height: 100px; background: black; color: white; margin: 7px; font: 32px bold ;border: red solid 4px;" onclick="game_ttt(this)" disabled = true>
+        <input type="button" value=" " id="middle_center" style="width: 100px; height: 100px; background: black; color: white; margin: 7px; font: 32px bold ;border: red solid 4px;" onclick="game_ttt(this)" disabled = true>
+        <input type="button" value=" " id="middle_right" style="width: 100px; height: 100px; background: black; color: white; margin: 7px; font: 32px bold ;border: red solid 4px;" onclick="game_ttt(this)" disabled = true>
+        
+        <br>
+
+        <input type="button" value=" " id="bottom_left" style="width: 100px; height: 100px; background: black; color: white; margin: 7px; font: 32px bold ;border: red solid 4px;" onclick="game_ttt(this)" disabled = true>
+        <input type="button" value=" " id="bottom_center" style="width: 100px; height: 100px; background: black; color: white; margin: 7px; font: 32px bold ;border: red solid 4px;" onclick="game_ttt(this)" disabled = true>
+        <input type="button" value=" " id="bottom_right" style="width: 100px; height: 100px; background: black; color: white; margin: 7px; font: 32px bold ;border: red solid 4px;" onclick="game_ttt(this)" disabled = true>
+    </p>
+    <p id="result" style="font: 20px bold;"></p>
+    <div id="debug"></div>
+    <br>
+    <button id="play" style="width: 7cm; height: 1.5cm; font: 35px bold " onclick="set_player()">
+        <div>
+            Play
+        </div>
+    </button>
+    
+
+</body>
+</html>
